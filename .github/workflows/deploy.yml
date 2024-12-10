@@ -32,7 +32,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: main  # Указываем, на какую ветку деплоить
+          branch: gh-pages  # Указываем, на какую ветку деплоить
           folder: build  # Указываем, что папка build содержит скомпилированное приложение
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Этот токен используется для авторизации на GitHub API
